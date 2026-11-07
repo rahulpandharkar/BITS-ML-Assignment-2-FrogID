@@ -11,7 +11,7 @@ Frog calls can be represented by mel-frequency cepstral coefficients (MFCCs). Th
 
 The dataset is **Anuran Calls (MFCCs)** from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/406/anura). It contains 7,195 syllable instances, 22 real-valued MFCC features, and labels for 10 species. The source also includes family, genus, and recording ID fields. `Species` is the prediction target; `Family`, `Genus`, and `RecordID` are excluded from model inputs to avoid target leakage and recording overlap.
 
-The source CSV is included in `data/Frogs_MFCCs.csv`. UCI lists the dataset under the **CC BY 4.0** license. Attribution: Colonna, J., Nakamura, E., Cristo, M., & Gordo, M. (2015). *Anuran Calls (MFCCs)*. UCI Machine Learning Repository. [doi:10.24432/C5CC9H](https://doi.org/10.24432/C5CC9H).
+The source CSV is included in `data/Frogs_MFCCs.csv`. UCI lists the dataset under the **CC BY 4.0** license. Attribution: Colonna, J., Nakamura, E., Cristo, M., & Gordo, M. (2015). *Anuran Calls (MFCCs)*. UCI Machine Learning Repository. [doi:10.24432/C5CC9H](https://archive.ics.uci.edu/dataset/406/anura).
 
 ## c. GitHub Repository Link
 
