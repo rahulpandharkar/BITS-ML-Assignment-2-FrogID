@@ -12,7 +12,7 @@ The source CSV is included in `data/Frogs_MFCCs.csv`. UCI lists the dataset unde
 
 ## c. GitHub Repository Link
 
-**Repository:** _Add the public repository URL after publication._
+**Repository:** https://github.com/rahulpandharkar/BITS-ML-Assignment-2-anuran-call-species-classifier
 
 ## d. Models used
 
