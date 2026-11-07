@@ -9,6 +9,8 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 from sklearn.metrics import classification_report, confusion_matrix
+import subprocess
+import sys
 
 from src.common import (
     MFCC_COLUMNS,
@@ -22,6 +24,31 @@ from src.common import (
 ROOT = Path(__file__).resolve().parent
 MODEL_DIR = ROOT / "models"
 DEFAULT_TEST_DATA = ROOT / "test_data.csv"
+
+
+def launch_from_python() -> None:
+    """Make ``python app.py`` (and ``uv run python3 app.py``) launch Streamlit."""
+    from streamlit.runtime.scriptrunner import get_script_run_ctx
+
+    # Streamlit executes this same file as a script. Only launch the server when
+    # this file was started directly from a shell.
+    if get_script_run_ctx(suppress_warning=True) is not None:
+        return
+
+    expected_artifacts = [MODEL_DIR / filename for filename in MODEL_FILES.values()]
+    expected_artifacts.append(DEFAULT_TEST_DATA)
+    if not (ROOT / "data" / "Frogs_MFCCs.csv").is_file():
+        raise FileNotFoundError("Missing data/Frogs_MFCCs.csv; restore the included UCI dataset.")
+    if any(not path.is_file() for path in expected_artifacts):
+        subprocess.run([sys.executable, str(ROOT / "train_models.py")], cwd=ROOT, check=True)
+
+    from streamlit.web.cli import main
+
+    sys.argv = ["streamlit", "run", str(Path(__file__).resolve())]
+    raise SystemExit(main())
+
+
+launch_from_python()
 
 st.set_page_config(
     page_title="BITS-ML-Assignment-2-FrogID | Call-to-Species Lab",

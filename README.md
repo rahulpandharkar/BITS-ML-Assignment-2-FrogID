@@ -53,14 +53,17 @@ https://bits-ml-assignment-2-frogid.streamlit.app/
 ## Run locally
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\\Scripts\\activate
-pip install -r requirements.txt
-python train_models.py
-streamlit run app.py
+uv sync
+uv run python3 app.py
 ```
 
-The app loads the five saved estimators and evaluates an uploaded labeled CSV. It does not train or refit models on uploaded data. Use `test_data.csv` as the reference file; it contains the 22 MFCC input columns and `Species`.
+The second command launches the Streamlit interface. If model files or the held-out test CSV are missing, the app runs `train_models.py` first, using the included source dataset. You can also regenerate these files explicitly with `uv run python3 train_models.py`.
+
+### Which CSV is which?
+
+- `data/Frogs_MFCCs.csv` is the full UCI source dataset used to fit the five models. `train_models.py` keeps `Species` as the target and uses the 22 MFCC columns as features. It splits by recording ID so syllables from one recording do not appear in both training and test sets.
+- `test_data.csv` is the labeled, held-out test partition produced by that split. The app loads the saved model files in `models/` and evaluates them against this CSV. The models were fitted on the complementary training partition, not on `test_data.csv`.
+- The app's optional CSV uploader lets you evaluate another labeled test dataset. It expects the 22 MFCC columns and a `Species` column; it does not train or refit the models on uploaded data. Use labeled test data rather than the full source CSV, since that source includes rows the model was trained on.
 
 ## Repository contents
 
@@ -72,7 +75,9 @@ data/Frogs_MFCCs.csv           UCI source dataset
 test_data.csv                  Held-out labeled test set (created by training script)
 models/                        Five serialized preprocessing/model pipelines
 reports/                       Metrics, classification reports, split summary
-requirements.txt               Pinned runtime dependencies
+pyproject.toml                 uv project and pinned runtime dependencies
+uv.lock                        Reproducible dependency lockfile
+requirements.txt               Pinned Streamlit Cloud dependencies
 ```
 
 ## Evaluation design
