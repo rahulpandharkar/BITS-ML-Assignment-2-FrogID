@@ -48,7 +48,7 @@ The observations below describe this fixed, group-held-out test run. Macro score
 
 ## Live Streamlit App Link
 
-https://bits-ml-assignment-2-anuran-call-species-classifier-9lyjrnvtis.streamlit.app/
+https://bits-ml-assignment-2-frogid.streamlit.app/
 
 ## Run locally
 
