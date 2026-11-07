@@ -1,0 +1,42 @@
+{
+  "Logistic Regression": {
+    "Accuracy": 0.8888888888888888,
+    "AUC (macro OVR)": 0.9788395108001016,
+    "Precision (macro)": 0.7727480955454357,
+    "Recall (macro)": 0.7126186959627853,
+    "F1 (macro)": 0.6717309406083174,
+    "MCC": 0.8477936268863911
+  },
+  "Decision Tree": {
+    "Accuracy": 0.8632996632996633,
+    "AUC (macro OVR)": 0.8180501341007715,
+    "Precision (macro)": 0.741326151102859,
+    "Recall (macro)": 0.610649854356734,
+    "F1 (macro)": 0.6078693257357614,
+    "MCC": 0.8099174767206722
+  },
+  "K-Nearest Neighbors": {
+    "Accuracy": 0.9252525252525252,
+    "AUC (macro OVR)": 0.9538790771749902,
+    "Precision (macro)": 0.844622187026878,
+    "Recall (macro)": 0.8514629660819161,
+    "F1 (macro)": 0.8156987289590438,
+    "MCC": 0.897128241044278
+  },
+  "Gaussian Naive Bayes": {
+    "Accuracy": 0.8511784511784511,
+    "AUC (macro OVR)": 0.9567107617658328,
+    "Precision (macro)": 0.7167311326139102,
+    "Recall (macro)": 0.7445189310945757,
+    "F1 (macro)": 0.6721408172353686,
+    "MCC": 0.801986260653975
+  },
+  "Support Vector Machine": {
+    "Accuracy": 0.9077441077441077,
+    "AUC (macro OVR)": 0.9904593146828014,
+    "Precision (macro)": 0.8332829407235275,
+    "Recall (macro)": 0.8365597647194433,
+    "F1 (macro)": 0.792759029197611,
+    "MCC": 0.8730270446682208
+  }
+}

@@ -1,0 +1,377 @@
+{
+  "Logistic Regression": {
+    "AdenomeraAndre": {
+      "precision": 0.916083916083916,
+      "recall": 0.9776119402985075,
+      "f1-score": 0.9458483754512635,
+      "support": 134.0
+    },
+    "AdenomeraHylaedactylus": {
+      "precision": 0.9971056439942113,
+      "recall": 0.9913669064748202,
+      "f1-score": 0.9942279942279942,
+      "support": 695.0
+    },
+    "Ameeregatrivittata": {
+      "precision": 0.9629629629629629,
+      "recall": 0.2708333333333333,
+      "f1-score": 0.42276422764227645,
+      "support": 96.0
+    },
+    "HylaMinuta": {
+      "precision": 0.4117647058823529,
+      "recall": 0.9032258064516129,
+      "f1-score": 0.5656565656565656,
+      "support": 62.0
+    },
+    "HypsiboasCinerascens": {
+      "precision": 0.9074074074074074,
+      "recall": 0.7205882352941176,
+      "f1-score": 0.8032786885245902,
+      "support": 68.0
+    },
+    "HypsiboasCordobae": {
+      "precision": 0.8753387533875339,
+      "recall": 0.99079754601227,
+      "f1-score": 0.9294964028776979,
+      "support": 326.0
+    },
+    "LeptodactylusFuscus": {
+      "precision": 0.5714285714285714,
+      "recall": 0.08,
+      "f1-score": 0.14035087719298245,
+      "support": 50.0
+    },
+    "OsteocephalusOophagus": {
+      "precision": 0.11764705882352941,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.2,
+      "support": 3.0
+    },
+    "Rhinellagranulosa": {
+      "precision": 1.0,
+      "recall": 0.7142857142857143,
+      "f1-score": 0.8333333333333334,
+      "support": 14.0
+    },
+    "ScinaxRuber": {
+      "precision": 0.967741935483871,
+      "recall": 0.8108108108108109,
+      "f1-score": 0.8823529411764706,
+      "support": 37.0
+    },
+    "accuracy": 0.8888888888888888,
+    "macro avg": {
+      "precision": 0.7727480955454357,
+      "recall": 0.7126186959627853,
+      "f1-score": 0.6717309406083174,
+      "support": 1485.0
+    },
+    "weighted avg": {
+      "precision": 0.9154966210163057,
+      "recall": 0.8888888888888888,
+      "f1-score": 0.8774129688423824,
+      "support": 1485.0
+    }
+  },
+  "Decision Tree": {
+    "AdenomeraAndre": {
+      "precision": 0.6884057971014492,
+      "recall": 0.7089552238805971,
+      "f1-score": 0.6985294117647058,
+      "support": 134.0
+    },
+    "AdenomeraHylaedactylus": {
+      "precision": 0.9785100286532952,
+      "recall": 0.9827338129496402,
+      "f1-score": 0.9806173725771715,
+      "support": 695.0
+    },
+    "Ameeregatrivittata": {
+      "precision": 0.7945205479452054,
+      "recall": 0.6041666666666666,
+      "f1-score": 0.6863905325443787,
+      "support": 96.0
+    },
+    "HylaMinuta": {
+      "precision": 0.4016393442622951,
+      "recall": 0.7903225806451613,
+      "f1-score": 0.532608695652174,
+      "support": 62.0
+    },
+    "HypsiboasCinerascens": {
+      "precision": 0.9552238805970149,
+      "recall": 0.9411764705882353,
+      "f1-score": 0.9481481481481482,
+      "support": 68.0
+    },
+    "HypsiboasCordobae": {
+      "precision": 0.9109792284866469,
+      "recall": 0.941717791411043,
+      "f1-score": 0.9260935143288085,
+      "support": 326.0
+    },
+    "LeptodactylusFuscus": {
+      "precision": 0.6363636363636364,
+      "recall": 0.14,
+      "f1-score": 0.22950819672131148,
+      "support": 50.0
+    },
+    "OsteocephalusOophagus": {
+      "precision": 0.047619047619047616,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.08333333333333333,
+      "support": 3.0
+    },
+    "Rhinellagranulosa": {
+      "precision": 1.0,
+      "recall": 0.2857142857142857,
+      "f1-score": 0.4444444444444444,
+      "support": 14.0
+    },
+    "ScinaxRuber": {
+      "precision": 1.0,
+      "recall": 0.3783783783783784,
+      "f1-score": 0.5490196078431373,
+      "support": 37.0
+    },
+    "accuracy": 0.8632996632996633,
+    "macro avg": {
+      "precision": 0.741326151102859,
+      "recall": 0.610649854356734,
+      "f1-score": 0.6078693257357614,
+      "support": 1485.0
+    },
+    "weighted avg": {
+      "precision": 0.8877992929299119,
+      "recall": 0.8632996632996633,
+      "f1-score": 0.861070143209461,
+      "support": 1485.0
+    }
+  },
+  "K-Nearest Neighbors": {
+    "AdenomeraAndre": {
+      "precision": 0.9009009009009009,
+      "recall": 0.746268656716418,
+      "f1-score": 0.8163265306122449,
+      "support": 134.0
+    },
+    "AdenomeraHylaedactylus": {
+      "precision": 0.998546511627907,
+      "recall": 0.9884892086330935,
+      "f1-score": 0.9934924078091106,
+      "support": 695.0
+    },
+    "Ameeregatrivittata": {
+      "precision": 0.9864864864864865,
+      "recall": 0.7604166666666666,
+      "f1-score": 0.8588235294117647,
+      "support": 96.0
+    },
+    "HylaMinuta": {
+      "precision": 0.4918032786885246,
+      "recall": 0.967741935483871,
+      "f1-score": 0.6521739130434783,
+      "support": 62.0
+    },
+    "HypsiboasCinerascens": {
+      "precision": 0.855072463768116,
+      "recall": 0.8676470588235294,
+      "f1-score": 0.8613138686131386,
+      "support": 68.0
+    },
+    "HypsiboasCordobae": {
+      "precision": 0.9467455621301775,
+      "recall": 0.9815950920245399,
+      "f1-score": 0.963855421686747,
+      "support": 326.0
+    },
+    "LeptodactylusFuscus": {
+      "precision": 1.0,
+      "recall": 0.66,
+      "f1-score": 0.7951807228915663,
+      "support": 50.0
+    },
+    "OsteocephalusOophagus": {
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1-score": 0.5,
+      "support": 3.0
+    },
+    "Rhinellagranulosa": {
+      "precision": 1.0,
+      "recall": 0.7857142857142857,
+      "f1-score": 0.88,
+      "support": 14.0
+    },
+    "ScinaxRuber": {
+      "precision": 0.9333333333333333,
+      "recall": 0.7567567567567568,
+      "f1-score": 0.835820895522388,
+      "support": 37.0
+    },
+    "accuracy": 0.9252525252525252,
+    "macro avg": {
+      "precision": 0.844622187026878,
+      "recall": 0.8514629660819161,
+      "f1-score": 0.8156987289590438,
+      "support": 1485.0
+    },
+    "weighted avg": {
+      "precision": 0.9469510884899061,
+      "recall": 0.9252525252525252,
+      "f1-score": 0.9293181412633517,
+      "support": 1485.0
+    }
+  },
+  "Gaussian Naive Bayes": {
+    "AdenomeraAndre": {
+      "precision": 0.38461538461538464,
+      "recall": 0.03731343283582089,
+      "f1-score": 0.06802721088435375,
+      "support": 134.0
+    },
+    "AdenomeraHylaedactylus": {
+      "precision": 0.9970238095238095,
+      "recall": 0.9640287769784173,
+      "f1-score": 0.9802487198244331,
+      "support": 695.0
+    },
+    "Ameeregatrivittata": {
+      "precision": 0.5918367346938775,
+      "recall": 0.90625,
+      "f1-score": 0.7160493827160493,
+      "support": 96.0
+    },
+    "HylaMinuta": {
+      "precision": 0.30246913580246915,
+      "recall": 0.7903225806451613,
+      "f1-score": 0.4375,
+      "support": 62.0
+    },
+    "HypsiboasCinerascens": {
+      "precision": 0.881578947368421,
+      "recall": 0.9852941176470589,
+      "f1-score": 0.9305555555555556,
+      "support": 68.0
+    },
+    "HypsiboasCordobae": {
+      "precision": 0.9751552795031055,
+      "recall": 0.9631901840490797,
+      "f1-score": 0.9691358024691358,
+      "support": 326.0
+    },
+    "LeptodactylusFuscus": {
+      "precision": 1.0,
+      "recall": 0.58,
+      "f1-score": 0.7341772151898734,
+      "support": 50.0
+    },
+    "OsteocephalusOophagus": {
+      "precision": 0.09523809523809523,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.16666666666666666,
+      "support": 3.0
+    },
+    "Rhinellagranulosa": {
+      "precision": 1.0,
+      "recall": 0.7142857142857143,
+      "f1-score": 0.8333333333333334,
+      "support": 14.0
+    },
+    "ScinaxRuber": {
+      "precision": 0.9393939393939394,
+      "recall": 0.8378378378378378,
+      "f1-score": 0.8857142857142857,
+      "support": 37.0
+    },
+    "accuracy": 0.8511784511784511,
+    "macro avg": {
+      "precision": 0.7167311326139102,
+      "recall": 0.7445189310945757,
+      "f1-score": 0.6721408172353686,
+      "support": 1485.0
+    },
+    "weighted avg": {
+      "precision": 0.8733540078722084,
+      "recall": 0.8511784511784511,
+      "f1-score": 0.8398095977491785,
+      "support": 1485.0
+    }
+  },
+  "Support Vector Machine": {
+    "AdenomeraAndre": {
+      "precision": 0.6737588652482269,
+      "recall": 0.7089552238805971,
+      "f1-score": 0.6909090909090909,
+      "support": 134.0
+    },
+    "AdenomeraHylaedactylus": {
+      "precision": 1.0,
+      "recall": 0.9798561151079137,
+      "f1-score": 0.9898255813953488,
+      "support": 695.0
+    },
+    "Ameeregatrivittata": {
+      "precision": 1.0,
+      "recall": 0.46875,
+      "f1-score": 0.6382978723404256,
+      "support": 96.0
+    },
+    "HylaMinuta": {
+      "precision": 0.5486725663716814,
+      "recall": 1.0,
+      "f1-score": 0.7085714285714285,
+      "support": 62.0
+    },
+    "HypsiboasCinerascens": {
+      "precision": 0.9130434782608695,
+      "recall": 0.9264705882352942,
+      "f1-score": 0.9197080291970803,
+      "support": 68.0
+    },
+    "HypsiboasCordobae": {
+      "precision": 0.9259259259259259,
+      "recall": 0.9969325153374233,
+      "f1-score": 0.9601181683899557,
+      "support": 326.0
+    },
+    "LeptodactylusFuscus": {
+      "precision": 1.0,
+      "recall": 0.58,
+      "f1-score": 0.7341772151898734,
+      "support": 50.0
+    },
+    "OsteocephalusOophagus": {
+      "precision": 0.3,
+      "recall": 1.0,
+      "f1-score": 0.46153846153846156,
+      "support": 3.0
+    },
+    "Rhinellagranulosa": {
+      "precision": 1.0,
+      "recall": 0.7857142857142857,
+      "f1-score": 0.88,
+      "support": 14.0
+    },
+    "ScinaxRuber": {
+      "precision": 0.9714285714285714,
+      "recall": 0.918918918918919,
+      "f1-score": 0.9444444444444444,
+      "support": 37.0
+    },
+    "accuracy": 0.9077441077441077,
+    "macro avg": {
+      "precision": 0.8332829407235275,
+      "recall": 0.8365597647194433,
+      "f1-score": 0.792759029197611,
+      "support": 1485.0
+    },
+    "weighted avg": {
+      "precision": 0.9293488569526968,
+      "recall": 0.9077441077441077,
+      "f1-score": 0.9068115899237545,
+      "support": 1485.0
+    }
+  }
+}
