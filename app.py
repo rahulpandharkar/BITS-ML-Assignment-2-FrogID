@@ -24,7 +24,7 @@ MODEL_DIR = ROOT / "models"
 DEFAULT_TEST_DATA = ROOT / "test_data.csv"
 
 st.set_page_config(
-    page_title="FrogID | Call-to-Species Lab",
+    page_title="BITS-ML-Assignment-2-FrogID | Call-to-Species Lab",
     page_icon="🐸",
     layout="wide",
     initial_sidebar_state="expanded",
