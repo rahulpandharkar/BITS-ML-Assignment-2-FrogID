@@ -48,7 +48,7 @@ The observations below describe this fixed, group-held-out test run. Macro score
 
 ## Live Streamlit App Link
 
-_Add the deployed Streamlit Community Cloud URL after deployment._
+https://bits-ml-assignment-2-anuran-call-species-classifier-9lyjrnvtis.streamlit.app/
 
 ## Run locally
 
