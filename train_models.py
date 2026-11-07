@@ -14,6 +14,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
+from sklearn.calibration import CalibratedClassifierCV
 from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 
@@ -100,7 +101,11 @@ def make_models() -> dict[str, object]:
                 ("scale", StandardScaler()),
                 (
                     "classifier",
-                    SVC(C=3.0, kernel="rbf", probability=True, random_state=RANDOM_STATE),
+                    CalibratedClassifierCV(
+                        SVC(C=3.0, kernel="rbf", random_state=RANDOM_STATE),
+                        method="sigmoid",
+                        cv=3,
+                    ),
                 ),
             ]
         ),

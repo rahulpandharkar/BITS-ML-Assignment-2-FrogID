@@ -178,7 +178,7 @@ if not frame.empty:
     display = results.copy()
     for column in display.columns:
         display[column] = display[column].map(format_metric)
-    st.dataframe(display, use_container_width=True)
+    st.dataframe(display, width="stretch")
 
     chosen = details[model_name]
     selected_metrics = results.loc[model_name]
@@ -211,11 +211,11 @@ if not frame.empty:
             font_color="#e9f1e2",
         )
         chart.update_xaxes(tickangle=-35)
-        st.plotly_chart(chart, use_container_width=True)
+        st.plotly_chart(chart, width="stretch")
     with report_col:
         st.markdown("#### Species report")
         report = pd.DataFrame(chosen["report"]).T
-        st.dataframe(report.style.format(precision=3), use_container_width=True, height=550)
+        st.dataframe(report.style.format(precision=3), width="stretch", height=550)
 
     if len(classes) < 10:
         st.warning(
