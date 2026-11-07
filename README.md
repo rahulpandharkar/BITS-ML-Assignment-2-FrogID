@@ -87,8 +87,3 @@ requirements.txt               Pinned Streamlit Cloud dependencies
 - Model inputs contain only the 22 MFCC measurements. `RecordID`, `Family`, and `Genus` are metadata/related labels, not predictors.
 - Standard scaling is used in the Logistic Regression, KNN, and SVM pipelines. The tree and Gaussian Naive Bayes use the original normalized MFCC values.
 - The app computes accuracy, macro one-vs-rest AUC, macro precision, macro recall, macro F1, and MCC for each model on the uploaded test data.
-
-## BITS Virtual Lab evidence
-
-_Reserved for the required execution screenshot. Add it when the BITS Virtual Lab work is completed, then include it in the final single-PDF submission._
-
